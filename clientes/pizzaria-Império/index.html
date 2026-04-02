@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>Pizzaria do Zé | Peça pelo WhatsApp</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    body {
+      background: linear-gradient(135deg, #2d1b00 0%, #4a2c00 100%);
+    }
+    .btn-whatsapp, .btn-small, .share-fab {
+      background: #ff6b35;
+    }
+    .btn-whatsapp:hover, .btn-small:hover, .share-fab:hover {
+      background: #e85d2a;
+    }
+    .section-title::after, .gallery-container::-webkit-scrollbar-thumb {
+      background: #ff6b35;
+    }
+    .price {
+      color: #ff6b35;
+    }
+    .testimonial {
+      border-left-color: #ff6b35;
+      background: rgba(255, 107, 53, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <button class="share-fab" onclick="compartilharPagina()">📤</button>
+
+  <div class="header">
+    <div class="logo-area">
+        <!-- OPÇÃO 1: Logo real -->
+        <img src="img/DO ZÉ.png" alt="Logo da Pizzaria" class="logo">
+        
+        <!-- OPÇÃO 2: Placeholder com iniciais -->
+        <!-- <div class="logo-placeholder">PZ</div> -->
+        </div>
+        <h1>🍕 Pizzaria do Zé</h1>
+        <p>Desde 2000 • A melhor pizza da cidade</p>
+        <a href="https://wa.me/5516992600684?text=Olá! Quero fazer um pedido" class="btn-whatsapp">
+            📞 Pedir por WhatsApp
+        </a>
+        <button onclick="compartilharPagina()" class="btn-share">
+            📤 Compartilhar com um amigo
+        </button>
+    </div>
+
+  <div class="container">
+    
+    <h2 class="section-title">📸 Nossas pizzas</h2>
+    <div class="gallery">
+      <div class="gallery-container">
+        <div class="gallery-item">
+          <img src="img/calabresa.jpg" alt="Pizza de calabresa">
+          <p>🍕 Calabresa</p>
+        </div>
+        <div class="gallery-item">
+          <img src="img/musarela.jpg" alt="Pizza de mussarela">
+          <p>🧀 Mussarela</p>
+        </div>
+        <div class="gallery-item">
+          <img src="img/portuguesa.jpg" alt="Pizza portuguesa">
+          <p>🥚 Portuguesa</p>
+        </div>
+        <div class="gallery-item">
+          <img src="img/frangoCatupiry.webp" alt="Pizza de frango">
+          <p>🐔 Frango com catupiry</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="section-title">🍕 Promoção da Semana</h2>
+    
+    <!-- Card Pizza Promoção -->
+    <div class="card">
+    <div class="card-img">
+        <img src="img/pizzasDiversas.jpg" alt="Pizza de calabresa">
+    </div>
+    <div class="card-info">
+        <h3>Pizza Grande (8 fatias)</h3>
+        <p>Calabresa, Mussarela ou Frango com catupiry</p>
+        <div class="price">R$ 34,90</div>
+        <a href="https://wa.me/5511999999999?text=Quero%20a%20PIZZA%20PROMOÇÃO%20-%20R$%2034,90" class="btn-small">🍕 Quero essa →</a>
+    </div>
+    </div>
+
+    <!-- Card Pizza Especial -->
+    <div class="card">
+    <div class="card-img">
+        <img src="img/pizzasEspeciais.jpg" alt="Pizza de mussarela">
+    </div>
+    <div class="card-info">
+        <h3>Pizza Especial</h3>
+        <p>Portuguesa, 4 queijos ou Peperoni</p>
+        <div class="price">R$ 49,90</div>
+        <a href="https://wa.me/5511999999999?text=Quero%20PIZZA%20ESPECIAL%20-%20R$%2049,90" class="btn-small">🍕 Quero essa →</a>
+    </div>
+    </div>
+
+    <!-- Card Combo -->
+    <div class="card">
+    <div class="card-img">
+        <img src="img/combo.png" alt="Combo pizza e refrigerante">
+    </div>
+    <div class="card-info">
+        <h3>Combo Pizza + Refri 2L</h3>
+        <p>Qualquer pizza grande + refrigerante</p>
+        <div class="price">R$ 54,90</div>
+        <a href="https://wa.me/5511999999999?text=Quero%20o%20COMBO%20PIZZA%20+%20REFRIGERANTE" class="btn-small">🥤 Quero esse →</a>
+    </div>
+    </div>
+
+    <div class="testimonial">
+      <p>⭐⭐⭐⭐⭐ "Melhor pizza delivery! Chegou quentinha e antes do prazo. Já virei cliente fiel."</p>
+      <p><strong>— Ana Rodrigues, Centro</strong></p>
+    </div>
+
+    <div class="testimonial">
+      <p>⭐⭐⭐⭐⭐ "A Entrega mais rápida de Pontal com qualidade e preço justo."</p>
+      <p><strong>— Marília, Centro</strong></p>
+    </div>
+
+    <a href="https://wa.me/5511999999999?text=Quero%20ver%20o%20cardápio%20completo" class="btn-whatsapp" style="display: block; width: 100%;">
+      🍕 Ver Cardápio Completo
+    </a>
+  </div>
+
+  <div class="footer">
+    <p>⏰ Quinta a Domingo, 18h às 23h | Último pedido 22:30</p>
+    <p>📍 Delivery Taxa única R$ 3,50</p>
+  </div>
+
+  <script>
+    function compartilharPagina() {
+      if (navigator.share) {
+        navigator.share({
+          title: 'Pizzaria do Zé',
+          text: 'As melhores pizzas da cidade! Peça pelo WhatsApp.',
+          url: window.location.href
+        });
+      } else {
+        navigator.clipboard.writeText(window.location.href);
+        alert('Link copiado! Compartilhe com seus amigos.');
+      }
+    }
+  </script>
+
+</body>
+</html>
