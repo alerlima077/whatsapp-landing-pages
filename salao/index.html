@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>Salão Feminino | Agende pelo WhatsApp</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    body {
+      background: linear-gradient(135deg, #1a0a2e 0%, #2d1b4e 100%);
+    }
+    .btn-whatsapp, .btn-small, .share-fab {
+      background: #9b59b6;
+    }
+    .btn-whatsapp:hover, .btn-small:hover, .share-fab:hover {
+      background: #8e44ad;
+    }
+    .section-title::after, .gallery-container::-webkit-scrollbar-thumb {
+      background: #9b59b6;
+    }
+    .price {
+      color: #d496ff;
+    }
+    .testimonial {
+      border-left-color: #9b59b6;
+      background: rgba(155, 89, 182, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <button class="share-fab" onclick="compartilharPagina()">📤</button>
+
+    <div class="header">
+        <div class="logo-area">
+            <!-- OPÇÃO 1: Logo real -->
+            <img src="/salao/img/Feminino.png" alt="Logo do Salão" class="logo">
+            
+            
+            <!-- OPÇÃO 2: Placeholder com iniciais -->
+            <!--<div class="logo-placeholder">SB</div> -->
+        </div>
+        <h1>💇‍♀️ Salão Feminino</h1>
+        <p>Beleza e autoestima para você</p>
+        <a href="https://wa.me/5511999999999?text=Olá! Quero agendar um horário" class="btn-whatsapp">
+            📅 Agendar pelo WhatsApp
+        </a>
+        <button onclick="compartilharPagina()" class="btn-share">
+            📤 Compartilhar com uma amiga
+        </button>
+    </div>
+
+  <div class="container">
+    
+    <h2 class="section-title">📸 Nosso trabalho</h2>
+    <div class="gallery">
+      <div class="gallery-container">
+        <div class="gallery-item">
+          <img src="/salao/img/cortes modenos.jpg" alt="Corte feminino">
+          <p>✂️ Cortes modernos</p>
+        </div>
+        <div class="gallery-item">
+          <img src="/salao/img/unhas.jpeg" alt="Manicure">
+          <p>💅 Unhas impecáveis</p>
+        </div>
+        <div class="gallery-item">
+          <img src="/salao/img/mechas.webp" alt="Mechas">
+          <p>🎨 Mechas e luzes</p>
+        </div>
+        <div class="gallery-item">
+          <img src="/salao/img/penteado.jpg" alt="Penteado">
+          <p>✨ Penteados especiais</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="section-title">✨ Serviços em Destaque</h2>
+    
+    <!-- Card Corte Feminino -->
+    <div class="card">
+    <div class="card-img">
+        <img src="/salao/img/Cortes-de-cabelo-feminino.jpg" alt="Corte feminino profissional">
+    </div>
+    <div class="card-info">
+        <h3>Corte Feminino</h3>
+        <p>Com lavagem e finalização</p>
+        <div class="price">R$ 45,00</div>
+        <a href="https://wa.me/5511999999999?text=Quero%20agendar%20um%20CORTE%20FEMININO" class="btn-small">✂️ Agendar →</a>
+    </div>
+    </div>
+
+    <!-- Card Manicure + Pedicure -->
+    <div class="card">
+    <div class="card-img">
+        <img src="/salao/img/manicure-e-pedicure.webp" alt="Manicure e pedicure">
+    </div>
+    <div class="card-info">
+        <h3>Manicure + Pedicure</h3>
+        <p>Esmaltação em gel inclusa</p>
+        <div class="price">R$ 35,00</div>
+        <a href="https://wa.me/5511999999999?text=Quero%20agendar%20MANICURE%20+%20PEDICURE" class="btn-small">💅 Agendar →</a>
+    </div>
+    </div>
+
+    <!-- Card Mechas -->
+    <div class="card">
+    <div class="card-img">
+        <img src="/salao/img/luzes.jpg" alt="Mechas e luzes">
+    </div>
+    <div class="card-info">
+        <h3>Mechas / Luzes</h3>
+        <p>Com hidratação profissional</p>
+        <div class="price">R$ 120,00</div>
+        <a href="https://wa.me/5511999999999?text=Quero%20agendar%20MECHAS%20ou%20LUZES" class="btn-small">🎨 Agendar →</a>
+    </div>
+    </div>
+    <div class="benefits">
+      <div class="benefit-item">
+        <span>⭐</span>
+        <p>+300 clientes<br>satisfeitas</p>
+      </div>
+      <div class="benefit-item">
+        <span>💝</span>
+        <p>Ambiente<br>exclusivo</p>
+      </div>
+      <div class="benefit-item">
+        <span>📅</span>
+        <p>Agende sem<br>compromisso</p>
+      </div>
+    </div>
+
+    <div class="testimonial">
+      <p>⭐⭐⭐⭐⭐ "Gostei muito do serviço! Nota 10!"</p>
+      <p><strong>— Julia, Centro</strong></p>
+    </div>
+
+    <div class="testimonial">
+      <p>⭐⭐⭐⭐⭐ "Atendimento maravilhoso! Exatamente o que eu queria. Saí linda e renovada!"</p>
+      <p><strong>— Maria M., Vila Regina</strong></p>
+    </div>
+
+    <a href="https://wa.me/5511999999999?text=Quero%20ver%20todos%20os%20serviços%20e%20preços" class="btn-whatsapp" style="display: block; width: 100%;">
+      💇‍♀️ Ver Cardápio Completo
+    </a>
+  </div>
+
+  <div class="footer">
+    <p>⏰ Terça a Sábado, 9h às 19h | Domingo, 10h às 15h</p>
+    <p>📍 Rua das Flores, 123 - Sala 5 | Estacionamento grátis</p>
+  </div>
+
+  <script>
+    function compartilharPagina() {
+      if (navigator.share) {
+        navigator.share({
+          title: 'Salão da Bia',
+          text: 'Agende seu horário no Salão da Bia! Cuidados especiais para você.',
+          url: window.location.href
+        });
+      } else {
+        navigator.clipboard.writeText(window.location.href);
+        alert('Link copiado! Compartilhe com suas amigas.');
+      }
+    }
+  </script>
+
+</body>
+</html>

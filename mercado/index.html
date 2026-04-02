@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>Mercado Popular | Ofertas no WhatsApp</title>
+  <link rel="stylesheet" href="../style.css">
+  <meta property="og:title" content="Mercado Popular - Ofertas no WhatsApp">
+  <meta property="og:description" content="Peça do celular e receba em casa. Entrega rápida no seu bairro.">
+  <meta property="og:image" content="https://images.pexels.com/photos/2641886/pexels-photo-2641886.jpeg">
+</head>
+<body>
+
+  <!-- Botão flutuante de compartilhar -->
+  <button class="share-fab" onclick="compartilharPagina()">📤</button>
+
+    <div class="header">
+        <div class="logo-area">
+            <!-- OPÇÃO 1: Se o cliente tiver logo (descomente e use) -->
+            <img src="/mercado/img/Mercado Popular.jpg" alt="Logo do Mercado" class="logo">
+            
+            <!-- OPÇÃO 2: Placeholder com iniciais (use se cliente não tiver logo) -->
+            <!-- <div class="logo-placeholder">MP</div> -->
+        </div>
+        <h1>🛒 Mercado Popular</h1>
+        <p>Ofertas todos os dias • Entrega no seu bairro</p>
+        <a href="https://wa.me/5511999999999?text=Olá! Quero receber as ofertas do dia" class="btn-whatsapp">
+            📲 Ver Ofertas no WhatsApp
+        </a>
+        <button onclick="compartilharPagina()" class="btn-share">
+            📤 Compartilhar com um amigo
+        </button>
+    </div>
+
+  <div class="container">
+    
+    <!-- GALERIA DE IMAGENS -->
+    <h2 class="section-title">📸 Conheça nosso mercado</h2>
+    <div class="gallery">
+      <div class="gallery-container">
+        <div class="gallery-item">
+          <img src="/mercado/img/frutas.jpg" alt="Prateleiras frutas">
+          <p>🍎 Frutas frescas</p>
+        </div>
+        <div class="gallery-item">
+          <img src="/mercado/img/carnes.jpg" alt="Açougue">
+          <p>🥩 Carnes selecionadas</p>
+        </div>
+        <div class="gallery-item">
+          <img src="/mercado/img/hortifruti.jpg" alt="Hortifruti">
+          <p>🥬 Hortifruti diário</p>
+        </div>
+        <div class="gallery-item">
+          <img src="/mercado/img/bebidasGeladas.jpg" alt="Bebidas">
+          <p>🥤 Bebidas geladas</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="section-title">🔥 Ofertas da Semana</h2>
+    
+    <!-- Card Arroz com imagem real -->
+    <div class="card">
+    <div class="card-img">
+        <img src="/mercado/img/arroz.webp" alt="Pacote de arroz 5kg">
+    </div>
+    <div class="card-info">
+        <h3>Arroz 5kg</h3>
+        <p>Tipo 1 - Pacote novo</p>
+        <div class="price">R$ 22,90</div>
+        <a href="https://wa.me/5516993173863?text=Quero%20comprar%20ARROZ%205kg%20-%20R$%2022,90" class="btn-small">✅ Quero este →</a>
+    </div>
+    </div>
+
+    <!-- Card Feijão com imagem real -->
+    <div class="card">
+    <div class="card-img">
+        <img src="/mercado/img/feijao.webp" alt="Pacote de feijão 1kg">
+    </div>
+    <div class="card-info">
+        <h3>Feijão 1kg</h3>
+        <p>Carioca - Qualidade premium</p>
+        <div class="price">R$ 7,99</div>
+        <a href="https://wa.me/5516993173863?text=Quero%20comprar%20FEIJÃO%201kg%20-%20R$%207,99" class="btn-small">✅ Quero este →</a>
+    </div>
+    </div>
+
+    <!-- Card Picanha com imagem real -->
+    <div class="card">
+    <div class="card-img">
+        <img src="/mercado/img/picanha.webp" alt="Picanha fresca">
+    </div>
+    <div class="card-info">
+        <h3>Picanha (kg)</h3>
+        <p>Peça especial - até 10h entrega</p>
+        <div class="price">R$ 49,90</div>
+        <a href="https://wa.me/5516993173863?text=Quero%20comprar%20PICANHA%201kg%20-%20R$%2049,90" class="btn-small">✅ Quero este →</a>
+    </div>
+    </div>
+
+    <div class="benefits">
+      <div class="benefit-item">
+        <span>🚚</span>
+        <p>Entrega rápida<br>em até 1h</p>
+      </div>
+      <div class="benefit-item">
+        <span>💰</span>
+        <p>Aceitamos<br>PIX e cartão</p>
+      </div>
+      <div class="benefit-item">
+        <span>⭐</span>
+        <p>+500 clientes<br>satisfeitos</p>
+      </div>
+    </div>
+
+    <div class="testimonial">
+      <p>⭐⭐⭐⭐⭐ "Melhor mercado do bairro. Peço pelo WhatsApp e chega em 30 minutos. Os preços são ótimos!"</p>
+      <p><strong>— Carlos Silva, Jardim América</strong></p>
+    </div>
+
+    <div class="testimonial">
+      <p>⭐⭐⭐⭐⭐ "Muito bem atendido e também uma grande variedades de mercadorias"</p>
+      <p><strong>— Josiane, Parque Novo Mundo</strong></p>
+    </div>
+
+    <a href="https://wa.me/5516993173863?text=Quero%20fazer%20um%20pedido%20completo" class="btn-whatsapp" style="display: block; width: 100%;">
+      🛍️ Fazer Pedido Agora
+    </a>
+  </div>
+
+  <div class="footer">
+    <p>📞 Atendimento: Segunda a Sábado, 8h às 20h</p>
+    <p>📞 Aos domingos: 9h às 13h</p>
+    <p>📍 Entregamos na sua casa | Mínimo R$ 20,00</p>
+  </div>
+
+  <script>
+    function compartilharPagina() {
+      if (navigator.share) {
+        navigator.share({
+          title: 'Mercado Popular',
+          text: 'Confira as ofertas do Mercado Popular! Peça pelo WhatsApp.',
+          url: window.location.href
+        }).catch(() => console.log('Compartilhamento cancelado'));
+      } else {
+        // Fallback para navegadores sem Web Share API
+        navigator.clipboard.writeText(window.location.href);
+        alert('Link copiado! Cole no WhatsApp para compartilhar.');
+      }
+    }
+  </script>
+
+</body>
+</html>
