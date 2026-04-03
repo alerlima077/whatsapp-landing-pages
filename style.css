@@ -366,7 +366,7 @@ body {
   max-width: 120px;
   height: auto;
   border-radius: 20px;
-  background: white;
+  background: rgba(255, 255, 255, 0);
   padding: 8px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
@@ -407,5 +407,36 @@ body {
     width: 70px;
     height: 70px;
     font-size: 28px;
+  }
+}
+
+.preco-antigo {
+  color: #888; /* Cinza */
+  font-size: 1.2em;
+  margin-right: 5px;
+}
+.preco-novo {
+  color: #e74c3c; /* Vermelho destaque */
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* Estilo para o link do mapa */
+.footer a {
+  color: #25D366;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+/* Ícone de localização maior no mobile */
+@media (max-width: 600px) {
+  .footer a {
+    display: inline-block;
+    margin-top: 5px;
   }
 }
