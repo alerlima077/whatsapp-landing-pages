@@ -1,3 +1,8 @@
+/* ============================================ */
+/* ESTILOS EXCLUSIVOS - SALÃO DA BIA            */
+/* Cores: Roxo (#9b59b6)                       */
+/* ============================================ */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +11,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+  background: linear-gradient(135deg, #1a0a2e 0%, #2d1b4e 100%);
   color: white;
   line-height: 1.6;
 }
@@ -16,6 +21,10 @@ body {
   margin: 0 auto;
   padding: 40px 20px;
 }
+
+/* ============================================ */
+/* CABEÇALHO                                    */
+/* ============================================ */
 
 .header {
   text-align: center;
@@ -33,10 +42,45 @@ body {
   opacity: 0.9;
 }
 
-/* Botão principal WhatsApp */
+/* ============================================ */
+/* LOGO                                         */
+/* ============================================ */
+
+.logo-area {
+  margin-bottom: 20px;
+}
+
+.logo {
+  max-width: 120px;
+  height: auto;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0);
+  padding: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.logo-placeholder {
+  width: 80px;
+  height: 80px;
+  background: #9b59b6;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  margin: 0 auto;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* ============================================ */
+/* BOTÕES - COR ROXA                            */
+/* ============================================ */
+
 .btn-whatsapp {
   display: inline-block;
-  background: #25D366;
+  background: #9b59b6;
   color: white;
   text-decoration: none;
   padding: 14px 28px;
@@ -51,17 +95,16 @@ body {
 }
 
 .btn-whatsapp:hover {
-  background: #128C7E;
+  background: #8e44ad;
   transform: scale(1.05);
 }
 
-/* Botão de compartilhar */
 .btn-share {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  background: #128C7E;
+  background: #8e44ad;
   color: white;
   text-decoration: none;
   padding: 10px 20px;
@@ -75,15 +118,15 @@ body {
 }
 
 .btn-share:hover {
-  background: #075e54;
+  background: #7d3c98;
   transform: scale(1.02);
 }
 
 .btn-outline {
   display: inline-block;
   background: transparent;
-  border: 2px solid #25D366;
-  color: #25D366;
+  border: 2px solid #9b59b6;
+  color: #9b59b6;
   text-decoration: none;
   padding: 12px 24px;
   border-radius: 50px;
@@ -93,9 +136,58 @@ body {
 }
 
 .btn-outline:hover {
-  background: #25D366;
+  background: #9b59b6;
   color: white;
 }
+
+.btn-small {
+  display: inline-block;
+  background: #9b59b6;
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-top: 8px;
+}
+
+.btn-small:hover {
+  background: #8e44ad;
+}
+
+/* ============================================ */
+/* BOTÃO FLUTUANTE COMPARTILHAR                 */
+/* ============================================ */
+
+.share-fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #9b59b6;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: 0.3s;
+  z-index: 1000;
+  border: none;
+  font-size: 24px;
+}
+
+.share-fab:hover {
+  transform: scale(1.1);
+  background: #8e44ad;
+}
+
+/* ============================================ */
+/* TÍTULOS E SEÇÕES                             */
+/* ============================================ */
 
 .section-title {
   text-align: center;
@@ -109,11 +201,14 @@ body {
   display: block;
   width: 60px;
   height: 3px;
-  background: #25D366;
+  background: #9b59b6;
   margin: 10px auto 0;
 }
 
-/* Cards de produtos COM IMAGEM */
+/* ============================================ */
+/* CARDS DE PRODUTOS                            */
+/* ============================================ */
+
 .card {
   background: rgba(255,255,255,0.1);
   backdrop-filter: blur(10px);
@@ -132,14 +227,6 @@ body {
   background: rgba(255,255,255,0.15);
 }
 
-/* Garantir que imagens dos cards fiquem redondas e padronizadas */
-.card-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 15px;
-}
-
 .card-img {
   width: 80px;
   height: 80px;
@@ -151,13 +238,11 @@ body {
   justify-content: center;
 }
 
-/* Para mobile */
-@media (max-width: 600px) {
-  .card-img {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-  }
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
 }
 
 .card-info {
@@ -178,28 +263,27 @@ body {
 .price {
   font-size: 20px;
   font-weight: bold;
-  color: #25D366;
+  color: #d496ff;
   margin: 5px 0;
 }
 
-.btn-small {
-  display: inline-block;
-  background: #25D366;
-  color: white;
-  text-decoration: none;
-  padding: 8px 16px;
-  border-radius: 50px;
-  font-size: 12px;
+/* Preço antigo e novo (para promoções) */
+.preco-antigo {
+  color: #888;
+  font-size: 1.2em;
+  margin-right: 5px;
+}
+
+.preco-novo {
+  color: #e74c3c;
+  font-size: 1.2em;
   font-weight: bold;
-  transition: 0.3s;
-  margin-top: 8px;
 }
 
-.btn-small:hover {
-  background: #128C7E;
-}
+/* ============================================ */
+/* GALERIA DE IMAGENS (CARROSSEL)               */
+/* ============================================ */
 
-/* GALERIA DE IMAGENS (carrossel) */
 .gallery {
   margin: 30px 0;
 }
@@ -223,7 +307,7 @@ body {
 }
 
 .gallery-container::-webkit-scrollbar-thumb {
-  background: #25D366;
+  background: #9b59b6;
   border-radius: 10px;
 }
 
@@ -249,7 +333,10 @@ body {
   font-weight: bold;
 }
 
-/* Benefícios */
+/* ============================================ */
+/* BENEFÍCIOS                                   */
+/* ============================================ */
+
 .benefits {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -270,10 +357,13 @@ body {
   margin-bottom: 10px;
 }
 
-/* Depoimentos */
+/* ============================================ */
+/* DEPOIMENTOS                                  */
+/* ============================================ */
+
 .testimonial {
-  background: rgba(37, 211, 102, 0.1);
-  border-left: 4px solid #25D366;
+  background: rgba(155, 89, 182, 0.1);
+  border-left: 4px solid #9b59b6;
   padding: 15px;
   margin: 20px 0;
   border-radius: 10px;
@@ -285,10 +375,13 @@ body {
 }
 
 .testimonial strong {
-  color: #25D366;
+  color: #d496ff;
 }
 
-/* Rodapé */
+/* ============================================ */
+/* RODAPÉ                                       */
+/* ============================================ */
+
 .footer {
   text-align: center;
   padding: 30px 20px;
@@ -296,30 +389,20 @@ body {
   font-size: 14px;
 }
 
-/* Botão flutuante de compartilhar (opcional) */
-.share-fab {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25D366;
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+.footer a {
+  color: #d496ff;
+  text-decoration: none;
   transition: 0.3s;
-  z-index: 1000;
-  border: none;
-  font-size: 24px;
 }
 
-.share-fab:hover {
-  transform: scale(1.1);
-  background: #128C7E;
+.footer a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
 }
+
+/* ============================================ */
+/* RESPONSIVIDADE (MOBILE)                      */
+/* ============================================ */
 
 @media (max-width: 600px) {
   .container {
@@ -349,56 +432,7 @@ body {
   .gallery-item {
     flex: 0 0 220px;
   }
-}
-
-/* Cabeçalho com logo */
-.header {
-  text-align: center;
-  padding: 30px 20px;
-  background: rgba(0,0,0,0.3);
-}
-
-.logo-area {
-  margin-bottom: 20px;
-}
-
-.logo {
-  max-width: 120px;
-  height: auto;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0);
-  padding: 8px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-}
-
-/* Caso o cliente não tenha logo, usar iniciais */
-.logo-placeholder {
-  width: 80px;
-  height: 80px;
-  background: #25D366;
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 32px;
-  font-weight: bold;
-  color: white;
-  margin: 0 auto;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-}
-
-.header h1 {
-  font-size: 28px;
-  margin-bottom: 10px;
-}
-
-.header p {
-  font-size: 16px;
-  opacity: 0.9;
-}
-
-/* Ajuste para mobile */
-@media (max-width: 600px) {
+  
   .logo {
     max-width: 90px;
   }
@@ -408,33 +442,7 @@ body {
     height: 70px;
     font-size: 28px;
   }
-}
-
-.preco-antigo {
-  color: #888; /* Cinza */
-  font-size: 1.2em;
-  margin-right: 5px;
-}
-.preco-novo {
-  color: #e74c3c; /* Vermelho destaque */
-  font-size: 1.2em;
-  font-weight: bold;
-}
-
-/* Estilo para o link do mapa */
-.footer a {
-  color: #25D366;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.footer a:hover {
-  text-decoration: underline;
-  opacity: 0.8;
-}
-
-/* Ícone de localização maior no mobile */
-@media (max-width: 600px) {
+  
   .footer a {
     display: inline-block;
     margin-top: 5px;
