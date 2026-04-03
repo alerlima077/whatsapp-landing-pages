@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-  <title>Pizzaria do Zé | Peça pelo WhatsApp</title>
-  <link rel="stylesheet" href="../style.css">
+  <title>Império das Pizzas | Peça pelo WhatsApp</title>
+  <link rel="stylesheet" href="style.css">
   <style>
     body {
       background: linear-gradient(135deg, #2d1b00 0%, #4a2c00 100%);
@@ -25,6 +25,15 @@
       border-left-color: #ff6b35;
       background: rgba(255, 107, 53, 0.1);
     }
+    /* Estilo para categorias do cardápio */
+    .menu-category {
+      text-align: center;
+      margin: 40px 0 20px;
+      color: #ff6b35;
+      font-size: 24px;
+      border-bottom: 2px solid rgba(255, 107, 53, 0.3);
+      padding-bottom: 10px;
+    }
   </style>
 </head>
 <body>
@@ -33,21 +42,22 @@
 
   <div class="header">
     <div class="logo-area">
-        <!-- OPÇÃO 1: Logo real -->
-        <img src="img/DO ZÉ.png" alt="Logo da Pizzaria" class="logo">
+        <!-- Logo real -->
+        <img src="img/Logo_Imperio.png" alt="Logo da Pizzaria" class="logo">
         
         <!-- OPÇÃO 2: Placeholder com iniciais -->
         <!-- <div class="logo-placeholder">PZ</div> -->
-        </div>
-        <h1>🍕 Pizzaria do Zé</h1>
-        <p>Desde 2000 • A melhor pizza da cidade</p>
-        <a href="https://wa.me/5516992600684?text=Olá! Quero fazer um pedido" class="btn-whatsapp">
-            📞 Pedir por WhatsApp
-        </a>
-        <button onclick="compartilharPagina()" class="btn-share">
-            📤 Compartilhar com um amigo
-        </button>
     </div>
+    <h1>🍕 IMPÉRIO DAS PIZZAS</h1>
+    <p>Desde Sempre • A melhor pizza da cidade</p>
+    <a href="https://wa.me/5516992600684?text=Olá! Quero fazer um pedido" class="btn-whatsapp">
+        📞 Pedir por WhatsApp
+    </a>
+
+    <a href="https://ecta.com.br/ImperiodasPizzasPontal?w=1" class="btn-whatsapp">
+      🍕 Ver Cardápio Completo
+    </a>
+  </div>
 
   <div class="container">
     
@@ -77,42 +87,213 @@
     
     <!-- Card Pizza Promoção -->
     <div class="card">
-    <div class="card-img">
+      <div class="card-img">
         <img src="img/pizzasDiversas.jpg" alt="Pizza de calabresa">
-    </div>
-    <div class="card-info">
+      </div>
+      <div class="card-info">
         <h3>Pizza Grande (8 fatias)</h3>
         <p>Calabresa, Mussarela ou Frango com catupiry</p>
-        <div class="price">R$ 34,90</div>
-        <a href="https://wa.me/5511999999999?text=Quero%20a%20PIZZA%20PROMOÇÃO%20-%20R$%2034,90" class="btn-small">🍕 Quero essa →</a>
-    </div>
+        <p>
+          De <s class="preco-antigo">R$ 45,90</s> 
+          por <span class="price">R$ 39,90</span>
+        </p>
+        <a href="https://wa.me/5516992600684?text=Quero%20a%20PIZZA%20PROMOÇÃO%20-%20R$%2034,90" class="btn-small">🍕 Quero essa →</a>
+      </div>
     </div>
 
     <!-- Card Pizza Especial -->
     <div class="card">
-    <div class="card-img">
+      <div class="card-img">
         <img src="img/pizzasEspeciais.jpg" alt="Pizza de mussarela">
-    </div>
-    <div class="card-info">
+      </div>
+      <div class="card-info">
         <h3>Pizza Especial</h3>
-        <p>Portuguesa, 4 queijos ou Peperoni</p>
-        <div class="price">R$ 49,90</div>
-        <a href="https://wa.me/5511999999999?text=Quero%20PIZZA%20ESPECIAL%20-%20R$%2049,90" class="btn-small">🍕 Quero essa →</a>
-    </div>
+        <p>Á Moda da casa</p>
+        <p>
+          De <s class="preco-antigo">R$ 55,00</s> 
+          por <span class="price">R$ 49,90</span>
+        </p>
+        <a href="https://wa.me/5516992600684?text=Quero%20PIZZA%20ESPECIAL%20-%20R$%2049,90" class="btn-small">🍕 Quero essa →</a>
+      </div>
     </div>
 
     <!-- Card Combo -->
     <div class="card">
-    <div class="card-img">
+      <div class="card-img">
         <img src="img/combo.png" alt="Combo pizza e refrigerante">
-    </div>
-    <div class="card-info">
+      </div>
+      <div class="card-info">
         <h3>Combo Pizza + Refri 2L</h3>
         <p>Qualquer pizza grande + refrigerante</p>
-        <div class="price">R$ 54,90</div>
-        <a href="https://wa.me/5511999999999?text=Quero%20o%20COMBO%20PIZZA%20+%20REFRIGERANTE" class="btn-small">🥤 Quero esse →</a>
+        <p>
+          De <s class="preco-antigo">R$ 42,50</s> 
+          por <span class="price">R$ 37,90</span>
+        </p>
+        <a href="https://wa.me/5516992600684?text=Quero%20o%20COMBO%20PIZZA%20+%20REFRIGERANTE" class="btn-small">🥤 Quero esse →</a>
+      </div>
     </div>
+
+    <!-- ============================================ -->
+    <!-- CARDÁPIO COMPLETO (OPÇÃO 2)                  -->
+    <!-- ============================================ -->
+    
+    <h2 class="section-title">📋 Cardápio</h2>
+    
+    <!-- CATEGORIA: PIZZAS SALGADAS -->
+    <h3 class="menu-category">🍕 Pizzas Salgadas</h3>
+    
+    <div class="card">
+      <div class="card-img">
+        <img src="img/calabresa.jpg" alt="Calabresa">
+      </div>
+      <div class="card-info">
+        <h3>Calabresa</h3>
+        <p>Calabresa fatiada, cebola, mussarela e orégano</p>
+        <div class="price">R$ 34,90</div>
+        <a href="https://wa.me/5516992600684?text=Quero%20uma%20pizza%20CALABRESA%20-%20R$%2034,90" class="btn-small">🍕 Pedir →</a>
+      </div>
     </div>
+
+    <div class="card">
+      <div class="card-img">
+        <img src="img/musarela.jpg" alt="Mussarela">
+      </div>
+      <div class="card-info">
+        <h3>Mussarela</h3>
+        <p>Mussarela, tomate, orégano e azeitonas</p>
+        <div class="price">R$ 32,90</div>
+        <a href="https://wa.me/5516992600684?text=Quero%20uma%20pizza%20MUSSARELA%20-%20R$%2032,90" class="btn-small">🍕 Pedir →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <img src="img/portuguesa.jpg" alt="Portuguesa">
+      </div>
+      <div class="card-info">
+        <h3>Portuguesa</h3>
+        <p>Presunto, ovo, cebola, ervilha, mussarela e azeitona</p>
+        <div class="price">R$ 39,90</div>
+        <a href="https://wa.me/5516992600684?text=Quero%20uma%20pizza%20PORTUGUESA%20-%20R$%2039,90" class="btn-small">🍕 Pedir →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <img src="img/frangoCatupiry.webp" alt="Frango com Catupiry">
+      </div>
+      <div class="card-info">
+        <h3>Frango com Catupiry</h3>
+        <p>Frango desfiado, catupiry e milho</p>
+        <div class="price">R$ 42,90</div>
+        <a href="https://wa.me/5516992600684?text=Quero%20uma%20pizza%20FRANGO%20COM%20CATUPIRY%20-%20R$%2042,90" class="btn-small">🍕 Pedir →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <img src="img/pizza_pepperoni.jpg" alt="Peperoni">
+      </div>
+      <div class="card-info">
+        <h3>Peperoni</h3>
+        <p>Peperoni fatiado, mussarela e orégano</p>
+        <div class="price">R$ 44,90</div>
+        <a href="https://wa.me/5516992600684?text=Quero%20uma%20pizza%20PEPERONI%20-%20R$%2044,90" class="btn-small">🍕 Pedir →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <img src="img/pizza_quatroqueijo.jpg" alt="4 Queijos">
+      </div>
+      <div class="card-info">
+        <h3>4 Queijos</h3>
+        <p>Mussarela, provolone, parmesão e catupiry</p>
+        <div class="price">R$ 45,90</div>
+        <a href="https://wa.me/5516992600684?text=Quero%20uma%20pizza%204%20QUEIJOS%20-%20R$%2045,90" class="btn-small">🍕 Pedir →</a>
+      </div>
+    </div>
+
+    <!-- CATEGORIA: PIZZAS DOCES -->
+    <h3 class="menu-category">🍫 Pizzas Doces</h3>
+
+    <div class="card">
+      <div class="card-img">
+        <img src="img/pizza_chocolate.jpg" alt="Chocolate">
+      </div>
+      <div class="card-info">
+        <h3>Chocolate</h3>
+        <p>Chocolate ao leite com granulado</p>
+        <div class="price">R$ 35,90</div>
+        <a href="https://wa.me/5516992600684?text=Quero%20uma%20pizza%20de%20CHOCOLATE%20-%20R$%2035,90" class="btn-small">🍫 Pedir →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <img src="img/pizza_banana.jpeg" alt="Banana com Canela">
+      </div>
+      <div class="card-info">
+        <h3>Banana com Canela</h3>
+        <p>Banana fatiada, canela e leite condensado</p>
+        <div class="price">R$ 35,90</div>
+        <a href="https://wa.me/5516992600684?text=Quero%20uma%20pizza%20de%20BANANA%20COM%20CANELA%20-%20R$%2035,90" class="btn-small">🍫 Pedir →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <img src="img/pizza_morango.jpg" alt="Morango com Chocolate">
+      </div>
+      <div class="card-info">
+        <h3>Morango com Chocolate</h3>
+        <p>Morango fresco e chocolate ao leite</p>
+        <div class="price">R$ 42,90</div>
+        <a href="https://wa.me/5516992600684?text=Quero%20uma%20pizza%20de%20MORANGO%20COM%20CHOCOLATE%20-%20R$%2042,90" class="btn-small">🍫 Pedir →</a>
+      </div>
+    </div>
+
+    <!-- CATEGORIA: BEBIDAS -->
+    <h3 class="menu-category">🥤 Bebidas</h3>
+
+    <div class="card">
+      <div class="card-img">
+        <img src="img/coca-cola.jpg" alt="Coca-Cola 2L">
+      </div>
+      <div class="card-info">
+        <h3>Coca-Cola 2L</h3>
+        <p>Refrigerante gelado</p>
+        <div class="price">R$ 10,00</div>
+        <a href="https://wa.me/5516992600684?text=Quero%20uma%20COCA-COLA%202L%20-%20R$%2010,00" class="btn-small">🥤 Pedir →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <img src="img/guarana.jpg" alt="Guaraná 2L">
+      </div>
+      <div class="card-info">
+        <h3>Guaraná 2L</h3>
+        <p>Refrigerante gelado</p>
+        <div class="price">R$ 9,00</div>
+        <a href="https://wa.me/5516992600684?text=Quero%20um%20GUARANÁ%202L%20-%20R$%209,00" class="btn-small">🥤 Pedir →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <img src="img/agua.webp" alt="Água 500ml">
+      </div>
+      <div class="card-info">
+        <h3>Água Mineral 500ml</h3>
+        <p>Água gelada</p>
+        <div class="price">R$ 3,50</div>
+        <a href="https://wa.me/5516992600684?text=Quero%20uma%20ÁGUA%20500ml%20-%20R$%203,50" class="btn-small">💧 Pedir →</a>
+      </div>
+    </div>
+
+    <!-- FIM DO CARDÁPIO -->
+    <!-- ============================================ -->
 
     <div class="testimonial">
       <p>⭐⭐⭐⭐⭐ "Melhor pizza delivery! Chegou quentinha e antes do prazo. Já virei cliente fiel."</p>
@@ -124,21 +305,43 @@
       <p><strong>— Marília, Centro</strong></p>
     </div>
 
-    <a href="https://wa.me/5511999999999?text=Quero%20ver%20o%20cardápio%20completo" class="btn-whatsapp" style="display: block; width: 100%;">
+    <a href="https://ecta.com.br/ImperiodasPizzasPontal?w=1" class="btn-whatsapp" style="display: block; width: 100%;">
       🍕 Ver Cardápio Completo
     </a>
   </div>
 
   <div class="footer">
-    <p>⏰ Quinta a Domingo, 18h às 23h | Último pedido 22:30</p>
+    <p>⏰ Quarta a Domingo, 18h às 23h | Último pedido 22:30</p>
     <p>📍 Delivery Taxa única R$ 3,50</p>
+
+    <p>
+      📍 
+      <a href="https://www.google.com/maps/search/?api=1&query=Rua+José+Braga+De+Carvalho,+79+Parque+Dos+Jequitibás+III+Pontal+SP" 
+        target="_blank" 
+        style="color: #25D366; text-decoration: none; font-weight: bold;">
+        Rua José Braga de Carvalho, 79 - PARQUE DOS JEquitibás III, Pontal - SP,
+      </a>
+    </p>
+    
+    <!-- Botão adicional para o mapa -->
+    <div style="margin-top: 15px;">
+      <a href="https://www.google.com/maps/search/?api=1&query=Rua+José+Braga+De+Carvalho,+79+Parque+Dos+Jequitibás+III+Pontal+SP"  
+        target="_blank" 
+        style="display: inline-flex; align-items: center; gap: 5px; background: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 50px; text-decoration: none; color: white; font-size: 13px;">
+        🗺️ Abrir no Google Maps
+      </a>
+    </div>
   </div>
+
+  </div>
+
+  
 
   <script>
     function compartilharPagina() {
       if (navigator.share) {
         navigator.share({
-          title: 'Pizzaria do Zé',
+          title: 'Império das Pizzas',
           text: 'As melhores pizzas da cidade! Peça pelo WhatsApp.',
           url: window.location.href
         });
