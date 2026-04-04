@@ -157,33 +157,6 @@ body {
   background: #8e44ad;
 }
 
-/* ============================================ */
-/* BOTÃO FLUTUANTE COMPARTILHAR                 */
-/* ============================================ */
-
-.share-fab {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #9b59b6;
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  transition: 0.3s;
-  z-index: 1000;
-  border: none;
-  font-size: 24px;
-}
-
-.share-fab:hover {
-  transform: scale(1.1);
-  background: #8e44ad;
-}
 
 /* ============================================ */
 /* TÍTULOS E SEÇÕES                             */
@@ -448,4 +421,85 @@ body {
     margin-top: 5px;
   }
 }
+
+/* ============================================ */
+/* BOTÕES FLUTUANTES - MERCADO VALMAR           */
+/* ============================================ */
+
+/* Botão flutuante do WhatsApp */
+.whatsapp-fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: 0.3s;
+  z-index: 1000;
+  border: none;
+  text-decoration: none;
+}
+
+.whatsapp-fab:hover {
+  transform: scale(1.1);
+  background: #128C7E;
+}
+
+.whatsapp-fab img {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+/* Botão flutuante de compartilhar */
+.share-fab {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  background: #128C7E;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: 0.3s;
+  z-index: 1000;
+  border: none;
+  font-size: 24px;
+  color: white;
+}
+
+.share-fab:hover {
+  transform: scale(1.1);
+  background: #075e54;
+}
+
+/* Ajuste para mobile */
+@media (max-width: 600px) {
+  .whatsapp-fab {
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+  }
+  .whatsapp-fab img {
+    width: 28px;
+    height: 28px;
+  }
+  .share-fab {
+    bottom: 85px;
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+  }
+}
+
 
