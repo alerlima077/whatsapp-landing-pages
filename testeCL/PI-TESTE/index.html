@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>Império das Pizzas | Peça pelo WhatsApp</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+  <!-- Botão flutuante do Cardápio (1º de cima para baixo) -->
+  <a href="https://ecta.com.br/ImperiodasPizzasPontal?w=1" class="cardapio-fab" target="_blank">
+    📋
+  </a>
+
+  <!-- Botão flutuante do WhatsApp (2º de cima para baixo) -->
+  <a href="https://wa.me/5516992600684?text=Olá! Quero fazer um pedido" class="whatsapp-fab" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </a>
+
+  <!-- Botão flutuante de compartilhar (3º de cima para baixo / último) -->
+  <button class="share-fab" onclick="compartilharPagina()">📤</button>
+
+  <div class="header">
+    <div class="logo-area">
+        <!-- Logo real -->
+        <img src="img/Logo_Imperio.png" alt="Logo da Pizzaria" class="logo">
+        
+        <!-- OPÇÃO 2: Placeholder com iniciais -->
+        <!-- <div class="logo-placeholder">PZ</div> -->
+    </div>
+    <h1>🍕 IMPÉRIO DAS PIZZAS</h1>
+    <p>Desde Sempre • A melhor pizza da cidade</p>
+    <a href="https://wa.me/5516992600684?text=Olá! Quero fazer um pedido" class="btn-whatsapp">
+        📞 Pedir por WhatsApp
+    </a>
+
+    <a href="https://ecta.com.br/ImperiodasPizzasPontal?w=1" class="btn-whatsapp">
+      📋 Ver Cardápio Completo
+    </a>
+  </div>
+
+  <div class="container">
+    
+    <h2 class="section-title">📸 Nossas pizzas</h2>
+    <div class="gallery">
+      <div class="gallery-container">
+        <div class="gallery-item">
+          <img src="img/calabresa.jpg" alt="Pizza de calabresa">
+          <p>🍕 Calabresa</p>
+        </div>
+        <div class="gallery-item">
+          <img src="img/musarela.jpg" alt="Pizza de mussarela">
+          <p>🧀 Mussarela</p>
+        </div>
+        <div class="gallery-item">
+          <img src="img/portuguesa.jpg" alt="Pizza portuguesa">
+          <p>🥚 Portuguesa</p>
+        </div>
+        <div class="gallery-item">
+          <img src="img/frangoCatupiry.webp" alt="Pizza de frango">
+          <p>🐔 Frango com catupiry</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="section-title">🍕 Promoção da Semana</h2>
+    
+    <!-- Card Pizza Promoção -->
+    <div class="card">
+      <div class="card-img">
+        <img src="img/pizzasDiversas.jpg" alt="Pizza de calabresa">
+      </div>
+      <div class="card-info">
+        <h3>Pizza Grande (8 fatias)</h3>
+        <p>Calabresa, Mussarela ou Frango com catupiry</p>
+        <p>
+          De <s class="preco-antigo">R$ 45,90</s> 
+          por <span class="price">R$ 39,90</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Card Pizza Especial -->
+    <div class="card">
+      <div class="card-img">
+        <img src="img/pizzasEspeciais.jpg" alt="Pizza de mussarela">
+      </div>
+      <div class="card-info">
+        <h3>Pizza Especial</h3>
+        <p>Á Moda da casa</p>
+        <p>
+          De <s class="preco-antigo">R$ 55,00</s> 
+          por <span class="price">R$ 49,90</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Card Combo -->
+    <div class="card">
+      <div class="card-img">
+        <img src="img/combo.png" alt="Combo pizza e refrigerante">
+      </div>
+      <div class="card-info">
+        <h3>Combo Pizza + Refri 2L</h3>
+        <p>Qualquer pizza grande + refrigerante</p>
+        <p>
+          De <s class="preco-antigo">R$ 42,50</s> 
+          por <span class="price">R$ 37,90</span>
+        </p>
+
+      </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- CARDÁPIO COMPLETO (OPÇÃO 2)                  -->
+    <!-- ============================================ -->
+    
+    <h2 class="section-title">📋 Cardápio</h2>
+    
+    <!-- CATEGORIA: PIZZAS SALGADAS -->
+    <h3 class="menu-category">🍕 Pizzas Salgadas</h3>
+    
+    <div class="card">
+      <div class="card-img">
+        <img src="img/calabresa.jpg" alt="Calabresa">
+      </div>
+      <div class="card-info">
+        <h3>Calabresa</h3>
+        <p>Calabresa fatiada, cebola, mussarela e orégano</p>
+        <div class="price">R$ 34,90</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <img src="img/musarela.jpg" alt="Mussarela">
+      </div>
+      <div class="card-info">
+        <h3>Mussarela</h3>
+        <p>Mussarela, tomate, orégano e azeitonas</p>
+        <div class="price">R$ 32,90</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <img src="img/portuguesa.jpg" alt="Portuguesa">
+      </div>
+      <div class="card-info">
+        <h3>Portuguesa</h3>
+        <p>Presunto, ovo, cebola, ervilha, mussarela e azeitona</p>
+        <div class="price">R$ 39,90</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <img src="img/frangoCatupiry.webp" alt="Frango com Catupiry">
+      </div>
+      <div class="card-info">
+        <h3>Frango com Catupiry</h3>
+        <p>Frango desfiado, catupiry e milho</p>
+        <div class="price">R$ 42,90</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <img src="img/pizza_pepperoni.jpg" alt="Peperoni">
+      </div>
+      <div class="card-info">
+        <h3>Peperoni</h3>
+        <p>Peperoni fatiado, mussarela e orégano</p>
+        <div class="price">R$ 44,90</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <img src="img/pizza_quatroqueijo.jpg" alt="4 Queijos">
+      </div>
+      <div class="card-info">
+        <h3>4 Queijos</h3>
+        <p>Mussarela, provolone, parmesão e catupiry</p>
+        <div class="price">R$ 45,90</div>
+      </div>
+    </div>
+
+    <!-- CATEGORIA: PIZZAS DOCES -->
+    <h3 class="menu-category">🍫 Pizzas Doces</h3>
+
+    <div class="card">
+      <div class="card-img">
+        <img src="img/pizza_chocolate.jpg" alt="Chocolate">
+      </div>
+      <div class="card-info">
+        <h3>Chocolate</h3>
+        <p>Chocolate ao leite com granulado</p>
+        <div class="price">R$ 35,90</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <img src="img/pizza_banana.jpeg" alt="Banana com Canela">
+      </div>
+      <div class="card-info">
+        <h3>Banana com Canela</h3>
+        <p>Banana fatiada, canela e leite condensado</p>
+        <div class="price">R$ 35,90</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <img src="img/pizza_morango.jpg" alt="Morango com Chocolate">
+      </div>
+      <div class="card-info">
+        <h3>Morango com Chocolate</h3>
+        <p>Morango fresco e chocolate ao leite</p>
+        <div class="price">R$ 42,90</div>
+      </div>
+    </div>
+
+    <!-- CATEGORIA: BEBIDAS -->
+    <h3 class="menu-category">🥤 Bebidas</h3>
+
+    <div class="card">
+      <div class="card-img">
+        <img src="img/coca-cola.jpg" alt="Coca-Cola 2L">
+      </div>
+      <div class="card-info">
+        <h3>Coca-Cola 2L</h3>
+        <p>Refrigerante gelado</p>
+        <div class="price">R$ 10,00</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <img src="img/guarana.jpg" alt="Guaraná 2L">
+      </div>
+      <div class="card-info">
+        <h3>Guaraná 2L</h3>
+        <p>Refrigerante gelado</p>
+        <div class="price">R$ 9,00</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <img src="img/agua.webp" alt="Água 500ml">
+      </div>
+      <div class="card-info">
+        <h3>Água Mineral 500ml</h3>
+        <p>Água gelada</p>
+        <div class="price">R$ 3,50</div>
+      </div>
+    </div>
+
+    <!-- FIM DO CARDÁPIO -->
+    <!-- ============================================ -->
+
+    <div class="testimonial">
+      <p>⭐⭐⭐⭐⭐ "Melhor pizza delivery! Chegou quentinha e antes do prazo. Já virei cliente fiel."</p>
+      <p><strong>— Ana Rodrigues, Centro</strong></p>
+    </div>
+
+    <div class="testimonial">
+      <p>⭐⭐⭐⭐⭐ "A Entrega mais rápida de Pontal com qualidade e preço justo."</p>
+      <p><strong>— Marília, Centro</strong></p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>⏰ Quarta a Domingo, 18h às 23h | Último pedido 22:30</p>
+    <p>📍 Delivery Taxa única R$ 3,50</p>
+
+    <p> 
+      <a href="https://www.google.com/maps/search/?api=1&query=Rua+José+Braga+De+Carvalho,+79+Parque+Dos+Jequitibás+III+Pontal+SP" 
+        target="_blank" 
+        style="color: #25D366; text-decoration: none; font-weight: bold;">
+        Rua José Braga de Carvalho, 79 - Parque Dos Jequitibás III, Pontal - SP,
+      </a>
+    </p>
+    
+    <!-- Botão adicional para o mapa -->
+    <div style="margin-top: 15px;">
+      <a href="https://www.google.com/maps/search/?api=1&query=Rua+José+Braga+De+Carvalho,+79+Parque+Dos+Jequitibás+III+Pontal+SP"  
+        target="_blank" 
+        style="display: inline-flex; align-items: center; gap: 5px; background: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 50px; text-decoration: none; color: white; font-size: 13px;">
+        🗺️ Abrir no Google Maps
+      </a>
+    </div>
+  </div>
+
+  </div>
+
+  
+
+  <script>
+    function compartilharPagina() {
+      if (navigator.share) {
+        navigator.share({
+          title: 'Império das Pizzas',
+          text: 'As melhores pizzas da cidade! Peça pelo WhatsApp.',
+          url: window.location.href
+        });
+      } else {
+        navigator.clipboard.writeText(window.location.href);
+        alert('Link copiado! Compartilhe com seus amigos.');
+      }
+    }
+  </script>
+
+</body>
+</html>
