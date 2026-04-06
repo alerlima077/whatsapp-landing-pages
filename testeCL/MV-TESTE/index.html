@@ -2,208 +2,181 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-  <title>Mercadinho Valmar | Ofertas no WhatsApp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercadinho Valmar | Ofertas com Entrega Rápida</title>
   <link rel="stylesheet" href="style.css">
-  <meta property="og:title" content="Mercadinho Valmar - Ofertas no WhatsApp">
-  <meta property="og:description" content="Peça do celular e receba em casa. Entrega rápida no seu bairro.">
+
+  <!-- SEO / Social -->
+  <meta property="og:title" content="Mercadinho Valmar - Ofertas com Entrega Rápida">
+  <meta property="og:description" content="Peça agora pelo WhatsApp e receba em casa em até 1 hora.">
   <meta property="og:image" content="https://images.pexels.com/photos/2641886/pexels-photo-2641886.jpeg">
 </head>
 <body>
 
-  <!-- Botão flutuante do WhatsApp -->
+  <!-- WhatsApp flutuante -->
   <a href="https://wa.me/551639535868?text=Olá! Quero fazer um pedido" class="whatsapp-fab" target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
   </a>
 
-  <!-- Botão flutuante de compartilhar -->
+  <!-- Compartilhar -->
   <button class="share-fab" onclick="compartilharPagina()">📤</button>
 
-    <div class="header">
-        <div class="logo-area">
-            <!-- OPÇÃO 1: Se o cliente tiver logo (descomente e use) -->
-            <img src="img/LogoTipo_Valmar.png" alt="Logo do Mercado" class="logo">
-            <!-- OPÇÃO 2: Placeholder com iniciais (use se cliente não tiver logo) -->
-            <!-- <div class="logo-placeholder">MP</div> -->
-        </div>
-        <h1>🛒 Mercadinho Valmar</h1>
-        <p>Ofertas todos os dias • Entregamos na sua casa</p>
-        <a href="https://wa.me/551639535868?text=Olá! Quero receber as ofertas do dia" class="btn-whatsapp">
-            📲 Ver Ofertas no WhatsApp
-        </a>
-        <button onclick="compartilharPagina()" class="btn-share">
-            📤 Compartilhar com um amigo
-        </button>
-    </div>
+  <!-- HEADER (FOCO EM CONVERSÃO) -->
+  <div class="header">
 
-  <div class="container">
-    
-    <!-- GALERIA DE IMAGENS -->
-    <h2 class="section-title">📸 Conheça nosso mercado</h2>
-    <div class="gallery">
-      <div class="gallery-container">
-        <div class="gallery-item">
-          <img src="img/carnes.jpeg" alt="Carnes">
-          <p>🥩 Carnes Nobres</p>
-        </div>
-        <div class="gallery-item">
-          <img src="img/cervejas300.jpeg" alt="Cervejas">
-          <p>🍺 Cervejas</p>
-        </div>
-        <div class="gallery-item">
-          <img src="img/geladeira.jpeg" alt="Geladeira">
-          <p>❄️ Bebida trincando e pronta para o brinde!</p> 
-        </div>
-        <div class="gallery-item">
-          <img src="img/bebidasGeladas.jpeg" alt="Bebidas Geladas">
-          <p>🍻 Variedade que impressiona, gelada no ponto certo!</p>
-        </div>
-        <div class="gallery-item">
-          <img src="img/hortifruti.jpg" alt="Hortifruti">
-          <p>🥬 Hortifruti diário</p>
-        </div>
-        <div class="gallery-item">
-          <img src="img/prateleiras.jpeg" alt="Bebidas">
-          <p>Qualidade que você confia</p>
-        </div>
-        <div class="gallery-item">
-          <img src="img/prateleira1.jpeg" alt="Bebidas">
-          <p>Preço justo para o seu dia a dia</p>
-        </div>
-        <div class="gallery-item">
-          <img src="img/prateleira2.jpeg" alt="Bebidas">
-          <p>Variedade que atende sua rotina</p>
-        </div>
-        <div class="gallery-item">
-          <img src="img/valmargas.jpeg" alt="Botijão de gás">
-          <p>🔥 Gás acabou? Entrega rápida e segura na sua porta!</p>
-        </div>
-        <div class="gallery-item">
-          <img src="img/fachadaMercadinho.jpeg" alt="Fachada do Mercado">
-          <p>🤝 Prazer em atendê-lo!</p>
-        </div>
-      </div>
-    </div>
+    <img src="img/LogoTipo_Valmar.png" alt="Logo" class="logo">
 
-    <h2 class="section-title">🔥 Ofertas da Semana</h2>
-    
-    <!-- Card Arroz com imagem real -->
-    <div class="card">
-    <div class="card-img">
-        <img src="img/arroz.webp" alt="Pacote de arroz 5kg">
-    </div>
-    <div class="card-info">
-      <h3>Arroz 5kg</h3>
-      <p>Tipo 1 - Pacote</p>
-      <p>
-        De <s class="preco-antigo">R$ 29,59</s> 
-        por <span class="price">R$ 27,65</span>
-      </p>
-        <a href="https://wa.me/551639535868?text=Quero%20comprar%20ARROZ%205kg%20-%20R$%2022,90" class="btn-small">✅ Quero este →</a>
-    </div>
-    </div>
+    <h1>🛒 Ofertas do dia com entrega rápida</h1>
 
-    <!-- Card Feijão com imagem real -->
-    <div class="card">
-    <div class="card-img">
-        <img src="img/feijao.webp" alt="Pacote de feijão 1kg">
-    </div>
-    <div class="card-info">
-      <h3>Feijão Carioca 1kg</h3>
-      <p>
-        De <s class="preco-antigo">R$ 9,99</s> 
-        por <span class="price">R$ 7,99</span>
-      </p>
-        <a href="https://wa.me/551639535868?text=Quero%20comprar%20FEIJÃO%201kg%20-%20R$%207,99" class="btn-small">✅ Quero este →</a>
-    </div>
-    </div>
+    <p>Receba suas compras em casa em até <strong>1 hora</strong> 🚚</p>
 
-    <!-- Card Picanha com imagem real -->
-    <div class="card">
-    <div class="card-img">
-        <img src="img/picanha.webp" alt="Picanha fresca">
-    </div>
-    <div class="card-info">
-      <h3>Picanha (kg)</h3>
-      <p>
-        De <s class="preco-antigo">R$ 57,99</s> 
-        por <span class="price">R$ 49,90</span>
-      </p>
-        <a href="https://wa.me/551639535868?text=Quero%20comprar%20PICANHA%201kg%20-%20R$%2049,90" class="btn-small">✅ Quero este →</a>
-    </div>
-    </div>
-
-    <!-- Card Botijão de gás-->
-    <div class="card">
-    <div class="card-img">
-        <img src="img/botijao.jpeg" alt="Botijão de gás">
-    </div>
-    <div class="card-info">
-      <h3>Gás de Cozinha (13kg)</h3>
-      <p>
-        De <s class="preco-antigo">R$ 110,00</s> 
-        por <span class="price">R$ 95,00</span>
-      </p>
-      <a href="https://wa.me/551639535868?text=Quero%20comprar%20GÁS%20DE%20COZINHA%2013kg%20-%20R$%2095,00" class="btn-small">✅ Quero este →</a>
-    </div>
-    </div>
-
-    <div class="benefits">
-      <div class="benefit-item">
-        <span>🚚</span>
-        <p>Entrega rápida<br>em até 1h</p>
-      </div>
-      <div class="benefit-item">
-        <span>💰</span>
-        <p>Aceitamos<br>PIX e cartão</p>
-      </div>
-    </div>
-
-    <div class="testimonial">
-      <p>⭐⭐⭐⭐⭐ "Melhor mercado do bairro. Peço pelo WhatsApp e chega em 30 minutos. Os preços são ótimos!"</p>
-      <p><strong>— Carlos Silva, Jardim América</strong></p>
-    </div>
-
-    <div class="testimonial">
-      <p>⭐⭐⭐⭐⭐ "Muito bem atendido e também uma grande variedades de mercadorias"</p>
-      <p><strong>— Josiane, Parque Novo Mundo</strong></p>
-    </div>
-
-    <a href="https://wa.me/551639535868?text=Quero%20fazer%20um%20pedido%20completo" class="btn-whatsapp" style="display: block; width: 100%;">
-      🛍️ Fazer Pedido Agora
+    <a href="https://wa.me/551639535868?text=Olá! Quero fazer um pedido" class="btn-whatsapp">
+      🟢 Pedir agora no WhatsApp
     </a>
+
+    <button onclick="compartilharPagina()" class="btn-share">
+      📤 Compartilhar
+    </button>
+
   </div>
 
-  <div class="footer">
-    <p>📞 Atendimento: Segunda a Sábado, 8h às 20h</p>
-    <p>📞 Aos domingos: 9h às 13h</p>
-    
-    <p>
-      📍 
-      <a href="https://www.google.com/maps/search/?api=1&query=Rua+das+Flores,+123+Centro+São+Paulo+SP" 
-        target="_blank" 
-        style="color: #25D366; text-decoration: none; font-weight: bold;">
-        Rua Pedro Ghiotho, 239 - POMBAL, Pontal - SP,
-      </a>
-    </p>
-    
-    <p>🚚 Entregamos na sua casa | Mínimo R$ 20,00</p>
-    
-    <!-- Botão adicional para o mapa -->
-    <div style="margin-top: 15px;">
-      <a href="https://www.google.com/maps/search/?api=1&query=Rua+Pedro+Ghioto,+239+POMBAL+Pontal+SP" 
-        target="_blank" 
-        style="display: inline-flex; align-items: center; gap: 5px; background: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 50px; text-decoration: none; color: white; font-size: 13px;">
-        🗺️ Abrir no Google Maps
-      </a>
+  <div class="container">
+
+    <!-- COMO FUNCIONA -->
+    <div class="how-it-works">
+      <h2 class="section-title">🛒 Como funciona</h2>
+      <p>1️⃣ Clique no botão</p>
+      <p>2️⃣ Escolha os produtos no WhatsApp</p>
+      <p>3️⃣ Receba em casa rapidamente</p>
     </div>
 
-    <!-- ASSINATURA -->
-    <div style="margin-top: 8px; padding-top: 0px; border-top: 1px solid rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap;">
-      <span style="font-size: 12px; opacity: 0.7;">Desenvolvido por</span>
-      <img src="img/Logo_T_&_SF.png" alt="TL Tecnologia & Serviço" style="max-width: 45px; height: auto; opacity: 0.8;">
-      <img src="img/AssinaturaBR_SF.png" alt="TL Tecnologia & Serviço" style="max-width: 160px; height: auto; opacity: 0.8;">
+    <h2 class="section-title">📸 Produtos e Qualidade</h2>
+
+    <div class="gallery">
+      <div class="gallery-track">
+
+        <div class="gallery-item">
+          <img src="img/carnes.jpeg">
+          <p>🥩 Carnes frescas todos os dias</p>
+        </div>
+
+        <div class="gallery-item">
+          <img src="img/cervejas300.jpeg">
+          <p>🍺 Bebidas sempre geladas</p>
+        </div>
+
+        <div class="gallery-item">
+          <img src="img/hortifruti.jpg">
+          <p>🥬 Hortifruti selecionado</p>
+        </div>
+
+        <div class="gallery-item">
+          <img src="img/prateleiras.jpeg">
+          <p>🛒 Grande variedade</p>
+        </div>
+
+        <div class="gallery-item">
+          <img src="img/valmargas.jpeg">
+          <p>🔥 Gás com entrega rápida</p>
+        </div>
+
+        <div class="gallery-item">
+          <img src="img/fachadaMercadinho.jpeg">
+          <p><p>🤝 Prontos para te atender todos os dias</p></p>
+        </div>
+
+      </div>
     </div>
+
+    <!-- OFERTAS -->
+    <h2 class="section-title">🔥 Ofertas de Hoje</h2>
+
+    <div class="card">
+      <div class="card-img">
+        <img src="img/arroz.webp" alt="Arroz 5kg">
+      </div>
+      <div class="card-info">
+        <h3>Arroz 5kg</h3>
+        <p>🔥 Oferta válida hoje</p>
+        <p>De <s>R$ 29,59</s> por <span class="price">R$ 27,65</span></p>
+        <a href="https://wa.me/551639535868?text=Quero%20comprar%20ARROZ%205kg" class="btn-small">🟢 Pedir no WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <img src="img/feijao.webp" alt="Feijão">
+      </div>
+      <div class="card-info">
+        <h3>Feijão 1kg</h3>
+        <p>⏳ Promoção por tempo limitado</p>
+        <p>De <s>R$ 9,99</s> por <span class="price">R$ 7,99</span></p>
+        <a href="https://wa.me/551639535868?text=Quero%20comprar%20FEIJÃO%201kg" class="btn-small">🟢 Pedir no WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <img src="img/picanha.webp" alt="Picanha">
+      </div>
+      <div class="card-info">
+        <h3>Picanha (kg)</h3>
+        <p>🔥 Alta procura hoje</p>
+        <p>De <s>R$ 57,99</s> por <span class="price">R$ 49,90</span></p>
+        <a href="https://wa.me/551639535868?text=Quero%20comprar%20PICANHA" class="btn-small">🟢 Pedir no WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <img src="img/botijao.jpeg" alt="Gás">
+      </div>
+      <div class="card-info">
+        <h3>Gás 13kg</h3>
+        <p>⚡ Entrega rápida</p>
+        <p>De <s>R$ 110,00</s> por <span class="price">R$ 95,00</span></p>
+        <a href="https://wa.me/551639535868?text=Quero%20comprar%20GÁS" class="btn-small">🟢 Pedir no WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- BENEFÍCIOS -->
+    <div class="benefits">
+      <div class="benefit-item">
+        🚚 Entrega em até 1h
+      </div>
+      <div class="benefit-item">
+        💳 PIX e Cartão
+      </div>
+    </div>
+
+    <!-- PROVA SOCIAL -->
+    <div class="testimonial">
+      ⭐⭐⭐⭐⭐ Melhor mercado do bairro! Chega rápido.
+      <br><strong>— Cliente do bairro</strong>
+    </div>
+
+    <div class="testimonial">
+      ⭐⭐⭐⭐⭐ Ótimos preços e atendimento.
+      <br><strong>— Cliente satisfeito</strong>
+    </div>
+
+    <!-- CTA FINAL -->
+    <a href="https://wa.me/551639535868?text=Quero%20fazer%20um%20pedido" class="btn-whatsapp" style="display:block;width:100%;">
+      🚀 Fazer pedido agora
+    </a>
+
+  </div>
+
+  <!-- RODAPÉ -->
+  <div class="footer">
+
+    <p>📍 Rua Pedro Ghiotho, 239 - Pontal - SP</p>
+    <p>🚚 Entregamos na sua casa</p>
+
+    <a href="https://www.google.com/maps/search/?api=1&query=Rua+Pedro+Ghioto,+239+Pontal+SP" target="_blank">
+      🗺️ Abrir no mapa
+    </a>
+
   </div>
 
   <script>
@@ -211,13 +184,12 @@
       if (navigator.share) {
         navigator.share({
           title: 'Mercadinho Valmar',
-          text: 'Confira as ofertas do Mercadinho Valmar! Peça pelo WhatsApp.',
+          text: 'Confira as ofertas!',
           url: window.location.href
-        }).catch(() => console.log('Compartilhamento cancelado'));
+        });
       } else {
-        // Fallback para navegadores sem Web Share API
         navigator.clipboard.writeText(window.location.href);
-        alert('Link copiado! Cole no WhatsApp para compartilhar.');
+        alert('Link copiado!');
       }
     }
   </script>
